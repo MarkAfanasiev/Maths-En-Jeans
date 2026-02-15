@@ -9,15 +9,14 @@ def formater_ligne(sequence):
     return " ".join(map(str, sequence))
 
 def lancer_conjecture():
-    print("Entrez votre suite de base (séparée par des espaces).")
-    print("Exemple: 1 2 3 4 5 6")
-    
+    print("Voici une calculatrice de conjecture type Proth-Gilbreath")
+    print("Veuillez entrer votre suite de nombres (séparés par des espaces).")
+    print("Par exemple: 1 2 3 4 5 6")
     entree = input("\nVotre suite : ")
     
     try:
         suite_actuelle = [int(x) for x in entree.split()]
     except ValueError:
-        print("Mettez les nombres correctement")
         return
     
     iteration = 0
