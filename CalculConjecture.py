@@ -17,7 +17,7 @@ def lancer_conjecture():
     try:
         suite_actuelle = [int(x) for x in entree.split()]
     except ValueError:
-        print("Erreur : Assurez vous de mettre cela correctement.")
+        print("Mettez les nombres correctement")
         return
     
     iteration = 0
