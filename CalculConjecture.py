@@ -11,6 +11,7 @@ def formater_ligne(sequence):
 def lancer_conjecture():
     print("Voici une calculatrice de conjecture type Proth-Gilbreath")
     print("Veuillez entrer le nom de la suite que vous voulez, ou inserez votre propre suite.")
+
     while True:
         entree = input()
 
@@ -24,7 +25,12 @@ def lancer_conjecture():
             entree = "1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39"
 
         if entree == "Premiers":
-            entree = "2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71"
+            print("Pour faire une suite de nombres premiers « en oubliant un nombre », écrivez le nombre à « oublier ».")
+            entree = input()
+            entree = int(entree)
+            entree = " ".join(map(str, (n for n in [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73] if n != entree)))
+
+
 
         if entree == "Fibonacci":
             entree = "0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181"
