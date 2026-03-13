@@ -11,7 +11,7 @@ def formater_ligne(sequence):
 def lancer_conjecture():
     print("Voici une calculatrice de conjecture type Proth-Gilbreath")
     print("Veuillez entrer le nom de la suite que vous voulez, ou inserez votre propre suite.")
-    print("Si vous écrivez votre
+    print("Pour insérer la suite, espacez chaque nombre.")
 
     while True:
         entree = input()
