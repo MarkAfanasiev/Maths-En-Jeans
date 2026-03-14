@@ -5,9 +5,6 @@ def calculer_differences(sequence):
         nouvelle_sequence.append(diff)
     return nouvelle_sequence
 
-def formater_ligne(sequence):
-    return " ".join(map(str, sequence))
-
 def lancer_conjecture():
     print("Voici une calculatrice de conjecture type Proth-Gilbreath")
     print("Veuillez entrer le nom de la suite que vous voulez, ou inserez votre propre suite.")
