@@ -121,14 +121,10 @@ def lancer_conjecture():
         if entree == "Oblongs":
             entree = "0 2 6 12 20 30 42 56 72 90 110 132 156 182 210 240 272 306 342 380"
 
-        if entree == "Puissances de 2":
-            entree = "1 2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288"
-
-        if entree == "Puissances de 3":
-            entree = "1 3 9 27 81 243 729 2187 6561 19683 59049 177147 531441 1594323 4782969 14348907 43046721 129140163 387420489 1162261467"
-
-        if entree == "Puissances de 5":
-            entree = "1 5 25 125 625 3125 15625 78125 390625 1953125 9765625 48828125 244140625 1220703125 6103515625 30517578125 152587890625 762939453125 3814697265625 19073486328125"
+        if entree == "Puissances":
+            print("Puissances de quel nombre?")
+            entree = int(input())
+            entree = " ".join(map(str, [1, entree**1, entree**2, entree**3, entree**4, entree**5, entree**6, entree**7, entree**8, entree**9, entree**10, entree**11, entree**12, entree**13, entree**14, entree**15, entree**16, entree**17, entree**18, entree**19]))
 
         if entree == "Hautement composés":
             entree = "1 2 4 6 12 24 36 48 60 120 180 240 360 720 840 1260 1680 2520 5040 7560"
